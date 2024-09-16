@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+body{
+    background: rgb(66, 65, 65)
+}
+
+.contenedor{
+    background: rgb(237, 237, 248);
+    max-width: 800px;
+    margin: 60px auto;
+    height: 1200px;
+    padding: 20px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor h1, h3{
+    text-align: center;
+    margin: 3px;
+    padding: 0px;
+    bottom: 20px;
+}
+
+.encabezado{
+    text-align: center;
+}
+
+.encabezado h1{
+   margin-bottom: 10px; 
+}
+
+.encabezado h3{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.fotoA{
+    width: 200px;
+    height: 210px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 18px auto;
+    border: 15px groove;
+}
+
+.fotoA img{
+    width: 100%;
+}
+
+.infoP{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.izquierda{
+    flex: 1;
+    padding: 30px;
+}
+
+.izquierda p{
+    line-height: 1.5;
+}
+
+.izquierda-1{
+    line-height: 10px;
+}
+
+.izquierda ul li{
+    line-height: 1.5;
+}
+
+h2{
+    background: orange;
+    padding: 3px;
+    color: aliceblue;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.derecha{
+    flex: 1;
+    padding: 30px;
+}
+
+.derecha h2{
+    margin: 0px;
+}
+
+.derecha h3{
+    margin-bottom: 10px;
+}
+
+.derecha p{
+    line-height: 1;
+}
+
+.derecha ul li{
+    line-height: 2;
+}
+
+@media (max-width: 768px) {
+    .infop {
+        flex-direction: column;
+    }
+
+    .izquierda, .derecha {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
